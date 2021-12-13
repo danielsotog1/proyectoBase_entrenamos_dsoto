@@ -91,7 +91,8 @@
                     android:ems="10"
                     android:hint="intensidad "
                     android:inputType="textPersonName"
-                    android:minHeight="48dp" />
+                    android:minHeight="48dp"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout

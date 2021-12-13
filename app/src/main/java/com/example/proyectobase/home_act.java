@@ -2,6 +2,7 @@ package com.example.proyectobase;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,9 @@ import android.widget.VideoView;
 
 public class home_act extends AppCompatActivity {
 
+
     private VideoView video;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +31,14 @@ public class home_act extends AppCompatActivity {
         MediaController media = new MediaController(this);
         video.setMediaController(media);
     }
+
+    public void Clases(View view)
+    {
+        Intent i = new Intent(this, Clases_act.class);
+        startActivity(i);
+    }
+
+
 
 
 }
